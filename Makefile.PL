@@ -7,7 +7,7 @@ WriteMakefile(
 	LICENSE        => 'perl_5',
 	VERSION_FROM   => 'lib/Algorithm/Odometer/Tiny.pm', # finds $VERSION
 	ABSTRACT_FROM  => 'lib/Algorithm/Odometer/Tiny.pm',
-	MIN_PERL_VERSION => '5.6',
+	MIN_PERL_VERSION => '5.6.0',
 	META_MERGE     => {
 		'meta-spec'  => { version => 2 },
 		provides     => {
