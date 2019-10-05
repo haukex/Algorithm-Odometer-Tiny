@@ -5,7 +5,7 @@ This is the distribution of the Perl modules
 [`Algorithm::Odometer::Tiny`](https://metacpan.org/pod/Algorithm::Odometer::Tiny) and
 [`Algorithm::Odometer::Gray`](https://metacpan.org/pod/Algorithm::Odometer::Gray).
 
-It is a Perl extension for generating "base-N odometer" permutations.
+It is a Perl extension for generating "base-N odometer" permutations (Cartesian product / product set).
 
 Please see the modules' documentation (POD) for details (try the command
 `perldoc lib/Algorithm/Odometer/Tiny.pm`) and the file `Changes` for version

@@ -48,7 +48,7 @@ __END__
 
 =head1 Name
 
-Algorithm::Odometer::Gray - Generate a "n-ary Gray code" (aka "non-Boolean Gray code") sequence
+Algorithm::Odometer::Gray - Generate a "n-ary Gray code" (aka "non-Boolean Gray code") sequence (Cartesian product / product set)
 
 =head1 Synopsis
 

@@ -40,7 +40,7 @@ __END__
 
 =head1 Name
 
-Algorithm::Odometer::Tiny - Generate "base-N odometer" permutations
+Algorithm::Odometer::Tiny - Generate "base-N odometer" permutations (Cartesian product / product set)
 
 =head1 Synopsis
 
@@ -98,6 +98,57 @@ produce this sequence:
 =item *
 
 L<Algorithm::Odometer::Gray>
+
+=back
+
+Here are some other implementations of the Cartesian product,
+although they may not produce items in the same order as this module.
+Note that if you want speed, XS-based implementations such as
+L<Math::Prime::Util|Math::Prime::Util> or L<Set::Product::XS|Set::Product::XS>
+are probably going to be fastest.
+
+=over
+
+=item *
+
+Perl's L<glob|perlfunc/glob> can produce a Cartesian product, if
+non-empty braces are the only wildcard characters used in the pattern.
+
+=item *
+
+L<Algorithm::Loops|Algorithm::Loops>'s C<NestedLoops>
+
+=item *
+
+L<List::Gen|List::Gen>'s C<cartesian>
+
+=item *
+
+L<List::MapMulti|List::MapMulti>
+
+=item *
+
+L<Math::Cartesian::Product|Math::Cartesian::Product>
+
+=item *
+
+L<Math::Prime::Util|Math::Prime::Util>'s C<forsetproduct>
+
+=item *
+
+L<Set::CartesianProduct::Lazy|Set::CartesianProduct::Lazy>
+
+=item *
+
+L<Set::CrossProduct|Set::CrossProduct>
+
+=item *
+
+L<Set::Product|Set::Product> / L<Set::Product::XS|Set::Product::XS>
+
+=item *
+
+L<Set::Scalar|Set::Scalar>'s C<cartesian_product>
 
 =back
 
