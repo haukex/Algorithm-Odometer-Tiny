@@ -3,7 +3,7 @@ Algorithm-Odometer-Tiny
 
 This is the distribution of the Perl modules
 [`Algorithm::Odometer::Tiny`](https://metacpan.org/pod/Algorithm::Odometer::Tiny) and
-[`Algorithm::Odometer::Gray`](https://metacpan.org/pod/Algorithm::Odometer::Gray) and.
+[`Algorithm::Odometer::Gray`](https://metacpan.org/pod/Algorithm::Odometer::Gray).
 
 It is a Perl extension for generating "base-N odometer" permutations.
 
