@@ -152,6 +152,11 @@ L<Set::Scalar|Set::Scalar>'s C<cartesian_product>
 
 =back
 
+=head1 Acknowledgements
+
+The motivation to release this module kindly provided by:
+L<Some Kiwi Novice @ PerlMonks|https://www.perlmonks.org/?node_id=11107116>
+
 =head1 References
 
 =over
