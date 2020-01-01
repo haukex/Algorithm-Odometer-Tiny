@@ -5,7 +5,7 @@ use strict;
 # SEE THE END OF THIS FILE FOR AUTHOR, COPYRIGHT AND LICENSE INFORMATION
 
 { package Algorithm::Odometer::Tiny;
-	our $VERSION = "0.02";
+	our $VERSION = "0.04";
 	use Carp;
 	use overload '<>' => sub {
 		my $self = shift;
