@@ -17,10 +17,13 @@ use strict;
 	};
 	sub new {  ## no critic (RequireArgUnpacking)
 		my $class = shift;
+		return bless odometer(@_), $class;
+	}
+	sub odometer {  ## no critic (RequireArgUnpacking)
 		croak "no wheels specified" unless @_;
 		my @w = map { [ 1, ref eq 'ARRAY' ? @$_ : $_ ] } @_;
 		my $done;
-		return bless sub {
+		return sub {
 			if ($done) { $done=0; return }
 			my @cur = map {$$_[$$_[0]]} @w;
 			for(my $i=$#w;$i>=0;$i--) {
@@ -29,7 +32,7 @@ use strict;
 				$done=1 unless $i;
 			}
 			return wantarray ? @cur : join '', map {defined()?$_:''} @cur;
-		}, $class;
+		};
 	}
 }
 
@@ -73,6 +76,11 @@ individual values. In Perl 5.18 and above, calling the C<< <> >>
 operator in list context will return all of the (remaining) values in
 the sequence as strings. In scalar context, the iterator will return
 C<undef> once, and then start the sequence from the beginning.
+
+This class is named C<::Tiny> because the code for the odometer fits
+on a single page, and if you look at the source, you'll see a
+C<sub odometer> that you can copy out of the source code if you wish
+(if you're not using L<Carp|Carp>, just replace C<croak> with C<die>).
 
 =head2 Example
 

@@ -17,6 +17,9 @@ use strict;
 	};
 	sub new {  ## no critic (RequireArgUnpacking)
 		my $class = shift;
+		return bless odometer_gray(@_), $class;
+	}
+	sub odometer_gray {  ## no critic (RequireArgUnpacking)
 		croak "no wheels specified" unless @_;
 		my @w = @_;
 		croak "all wheels must have at least two positions"
@@ -25,7 +28,7 @@ use strict;
 		my @f =  0 .. @w;
 		my @o = (1) x @w;
 		my $done;
-		return bless sub {
+		return sub {
 			if ($done) { @c = (0) x @w; @f =  0 .. @w; @o = (1) x @w; $done=0; return }
 			my @cur = map {$w[$_][$c[$_]]} 0..$#w;
 			if ($f[0]==@w) { $done=1 }
@@ -39,7 +42,7 @@ use strict;
 				}
 			}
 			return wantarray ? @cur : join '', map {defined()?$_:''} @cur;
-		}, $class;
+		};
 	}
 }
 
