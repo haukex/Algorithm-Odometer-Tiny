@@ -160,6 +160,11 @@ L<Set::Scalar|Set::Scalar>'s C<cartesian_product>
 
 =back
 
+The iterators returned from C<Algorithm::Odometer::Tiny::odometer()> and
+C<Algorithm::Odometer::Gray::odometer_gray()> can also be used with other
+iterator implementations based on code references such as L<Iterator::Simple>
+and L<Iterator::Simple::Lookahead>.
+
 =head1 Acknowledgements
 
 The motivation to release this module kindly provided by:
