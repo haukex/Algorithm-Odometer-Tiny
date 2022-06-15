@@ -63,8 +63,8 @@ Algorithm::Odometer::Gray - Generate a "n-ary" / "non-Boolean" Gray code sequenc
 
 =head1 Description
 
-This class implements the permutation algorithm described in I<[1]>
-and I<[2]>. It differs from L<Algorithm::Odometer::Tiny|Algorithm::Odometer::Tiny>
+This class implements the permutation algorithm described in I<[1]>.
+It differs from L<Algorithm::Odometer::Tiny|Algorithm::Odometer::Tiny>
 only in the order of the generated sequence, so
 B<< for all details about usage etc. please see L<Algorithm::Odometer::Tiny> >>.
 
@@ -106,11 +106,6 @@ L<Algorithm::Odometer::Tiny>
 
 Knuth's "The Art of Computer Programming",
 Section "Generating all n-tuples", Algorithm "Loopless reflected mixed-radix Gray generation".
-
-=item 2
-
-Bird, Richard. (2006). Loopless Functional Algorithms. 4014. 90-114. 10.1007/11783596_9.
-Section 9.5. "Non-binary Gray codes", Algorithm C.
 
 =back
 

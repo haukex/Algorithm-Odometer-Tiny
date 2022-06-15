@@ -1,7 +1,7 @@
 Revision history for Perl extension Algorithm::Odometer::Tiny.
 
 0.06	not yet released
-	- ...
+	- documentation updates
 
 0.04	Wed, Jan  1 2020	commit aa2ed5dfd0d4e881a4ab76268c8b2954cd63099b
 	- Reorganized module code a tiny bit
