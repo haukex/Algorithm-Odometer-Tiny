@@ -85,8 +85,7 @@ produce this sequence:
  ("Hi",    "World",   "cool!")
  ("Hello", "World",   "cool!")
 
-Note how from each item to the next, only one of the wheels changes,
-even when the sequence ends and wraps around to the beginning.
+Note how from each item to the next, only one of the wheels changes.
 
 =head1 See Also
 

@@ -15,7 +15,7 @@ information.
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/haukex/Algorithm-Odometer-Tiny?svg=true)](https://ci.appveyor.com/project/haukex/algorithm-odometer-tiny)
 [![Coverage Status](https://coveralls.io/repos/github/haukex/Algorithm-Odometer-Tiny/badge.svg)](https://coveralls.io/github/haukex/Algorithm-Odometer-Tiny)
 [![Kwalitee Score](https://cpants.cpanauthors.org/dist/Algorithm-Odometer-Tiny.svg)](https://cpants.cpanauthors.org/dist/Algorithm-Odometer-Tiny)
-[![CPAN Testers](https://badges.zero-g.net/cpantesters/Algorithm-Odometer-Tiny.svg)](http://matrix.cpantesters.org/?dist=Algorithm-Odometer-Tiny)
+[![CPAN Testers](https://haukex.github.io/my-badges/Algorithm-Odometer-Tiny.svg)](http://matrix.cpantesters.org/?dist=Algorithm-Odometer-Tiny)
 
 Installation
 ------------
